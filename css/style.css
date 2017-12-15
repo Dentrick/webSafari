@@ -1,0 +1,72 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+/* font import */
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+/* some default materialize stuff */
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+/* sticky footer */
+body {
+  font-family: 'Ubuntu', sans-serif;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+main {
+  flex: 1 0 auto;
+}
+
+/* printer only elements */
+.printer{
+  display: none;
+}
+
+/* image changes for homepage image */
+.responsive-img {
+  border: 4px solid black;
+  height: 100%;
+}
+
+/* as printer friendly as I could get it, basically removes a bunch of 
+padding and margins plus header/footer and decorations */
+@media print{
+  
+    .grey{
+      display: none;
+    }
+
+    i{
+      display: none;
+    }
+
+    h1, h2, h3, h4, h5, div{
+      margin: none;
+      padding: none;
+    }
+
+    a{
+      text-decoration: none;
+      text-decoration-color: black;
+      color: black;
+    }
+
+    .printer{
+      display: block;
+    }
+
+    h2{
+      display: none;
+    }
+}
