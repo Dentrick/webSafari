@@ -50,7 +50,7 @@ function ifLoss(){
     if(Vehicle.isColliding(h, p1)||Vehicle.isColliding(h, p2)||Vehicle.isColliding(h, p3)){
         lost = true;
         let p = document.querySelector("p");
-        p.innerHTML = "webSafari 2.0 - You have Lost.";
+        p.innerHTML = "webSafari 2.0 - You have Lost. press F5 or refresh to restart";
         p.style.color = "red";
     }
 }
